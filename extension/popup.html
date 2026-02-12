@@ -1,0 +1,73 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Arial; width: 360px; background: #0f1419; color: #e7e9ea; padding: 15px; }
+    .header { display: flex; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid #38444d; margin-bottom: 12px; }
+    .logo { font-size: 28px; }
+    .title { font-size: 1.1rem; font-weight: 700; }
+    .sub { font-size: 0.7rem; color: #71767b; }
+    .btn { width: 100%; padding: 12px; border: none; border-radius: 10px; background: linear-gradient(90deg, #1d9bf0, #00d4aa); color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer; }
+    .btn:hover { opacity: 0.9; }
+    .status { margin-top: 10px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; font-size: 0.8rem; color: #71767b; text-align: center; }
+    .status.error { background: rgba(244,33,46,0.1); color: #f4212e; border: 1px solid rgba(244,33,46,0.3); }
+    .result { display: none; }
+    .result-card { border-radius: 10px; padding: 12px; margin-top: 10px; border: 2px solid; }
+    .result-card.danger { background: rgba(244,33,46,0.1); border-color: #f4212e; }
+    .result-card.warning { background: rgba(255,212,0,0.1); border-color: #ffd400; }
+    .result-card.safe { background: rgba(0,186,124,0.1); border-color: #00ba7c; }
+    .res-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .res-icon { font-size: 28px; }
+    .res-title { font-size: 1rem; font-weight: 700; }
+    .result-card.danger .res-title { color: #f4212e; }
+    .result-card.warning .res-title { color: #ffd400; }
+    .result-card.safe .res-title { color: #00ba7c; }
+    .score-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .score-circle { width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; background: rgba(0,0,0,0.3); }
+    .result-card.danger .score-circle { border: 2px solid #f4212e; color: #f4212e; }
+    .result-card.warning .score-circle { border: 2px solid #ffd400; color: #ffd400; }
+    .result-card.safe .score-circle { border: 2px solid #00ba7c; color: #00ba7c; }
+    .threat-badge { padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; background: rgba(0,0,0,0.3); }
+    .section-title { font-size: 0.75rem; font-weight: 600; margin: 10px 0 6px; color: #a8b3bd; }
+    .flag-item { display: flex; gap: 8px; padding: 8px; background: rgba(0,0,0,0.2); border-radius: 6px; margin-bottom: 5px; font-size: 0.8rem; }
+    .flag-icon { font-size: 1rem; }
+    .flag-title { font-weight: 600; }
+    .flag-desc { font-size: 0.7rem; color: #71767b; }
+    .flag-item.critical { border-right: 2px solid #f4212e; }
+    .flag-item.high { border-right: 2px solid #ffd400; }
+    .action-item { display: flex; gap: 8px; padding: 8px; background: rgba(29,155,240,0.1); border-radius: 6px; margin-bottom: 4px; font-size: 0.8rem; }
+    .action-text { font-weight: 600; color: #1d9bf0; }
+    .action-desc { font-size: 0.65rem; color: #71767b; }
+    .advice { background: rgba(29,155,240,0.1); border-radius: 6px; padding: 8px; margin-top: 10px; font-size: 0.8rem; }
+    .advice-title { font-weight: 600; color: #1d9bf0; font-size: 0.75rem; }
+    .advice-text { color: #a8b3bd; }
+    .reset-btn { width: 100%; padding: 10px; margin-top: 10px; background: transparent; border: 1px solid #38444d; border-radius: 8px; color: #71767b; cursor: pointer; font-size: 0.85rem; }
+    .reset-btn:hover { border-color: #1d9bf0; color: #1d9bf0; }
+    .footer { text-align: center; margin-top: 10px; font-size: 0.65rem; color: #536471; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="logo">🛡️</span>
+    <div><div class="title">أمان</div><div class="sub">حماية ذكية من الاحتيال</div></div>
+  </div>
+  <div id="main">
+    <button id="btn" class="btn">🔍 تحليل الإيميل</button>
+    <div id="status" class="status">افتح إيميل في Gmail ثم اضغط تحليل</div>
+  </div>
+  <div id="result" class="result">
+    <div id="card" class="result-card">
+      <div class="res-header"><span class="res-icon" id="icon">🚨</span><div><div class="res-title" id="title">تحذير</div><div style="color:#71767b;font-size:0.7rem;" id="subtitle">تم اكتشاف تهديد</div></div></div>
+      <div class="score-row"><div class="score-circle" id="score">85%</div><div><div style="color:#71767b;font-size:0.65rem;">نوع التهديد</div><div class="threat-badge" id="threat">-</div></div></div>
+      <div id="flagsDiv"><div class="section-title">🚩 لماذا خطر؟</div><div id="flags"></div></div>
+      <div><div class="section-title">🛡️ ماذا أفعل؟</div><div id="actions"></div></div>
+      <div class="advice"><div class="advice-title">💡 نصيحة</div><div class="advice-text" id="advice">-</div></div>
+    </div>
+    <button class="reset-btn" id="resetBtn">↩️ تحليل آخر</button>
+  </div>
+  <div class="footer">أمان - جادة ثون 2025</div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Aman Gmail Scanner (MVP)",
+  "version": "0.1.0",
+  "description": "Analyze the currently opened Gmail email using Aman backend.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_title": "Aman Scanner",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

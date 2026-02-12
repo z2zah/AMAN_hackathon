@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+httpx==0.24.1
+pydantic
+scikit-learn
+pandas
+beautifulsoup4

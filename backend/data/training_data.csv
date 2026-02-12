@@ -1,0 +1,151 @@
+text,label,threat_type
+"انا من بنك التنمية ارسلي رقم ال otp",1,otp_request
+"ارسل لي رقم التحقق اللي وصلك",1,otp_request
+"احتاج رمز OTP عشان افعل حسابك",1,otp_request
+"وصلك رمز؟ ارسله لي بسرعة",1,otp_request
+"انا مديرك ابغى رقمك السري",1,boss_fraud
+"هذا المدير التنفيذي ارسل لي كلمة المرور",1,boss_fraud
+"مديرك محتاج بيانات حسابك ضروري",1,boss_fraud
+"انا المدير الجديد ابغى تحول 5000 فوراً",1,boss_fraud
+"ارسلي رقم بطاقتك الائتمانية",1,card_request
+"احتاج رقم CVV عشان اتأكد",1,card_request
+"اعطني رقم البطاقة والرقم السري",1,card_request
+"تم إيقاف بطاقتك البنكية حدث بياناتك فوراً عبر الرابط: bank-update.xyz",1,bank_impersonation
+"مبروك ربحت 50000 ريال من البنك الأهلي ارسل رقم بطاقتك",1,fake_prize
+"أنا خويك من المدرسة محتاج 1000 ريال ضروري وأرجعها لك بكرة والله",1,social_engineering
+"تم تجميد حسابك البنكي اضغط هنا للتحديث: secure-bank.xyz",1,bank_impersonation
+"فزت بجائزة سيارة مرسيدس أرسل 500 ريال رسوم الشحن",1,fake_prize
+"السلام عليكم أخوي أنا قريبك محمد محتاج مبلغ عاجل",1,social_engineering
+"حسابك سيُغلق خلال 24 ساعة إذا لم تحدث بياناتك",1,bank_impersonation
+"مبروك تم اختيارك للفوز بمليون ريال أرسل رقم هويتك",1,fake_prize
+"أنا صاحبك من العمل ممكن سلفة 2000 ريال؟",1,social_engineering
+"تنبيه أمني تم الدخول على حسابك من جهاز غريب حدث كلمة المرور: bit.ly/bank",1,phishing
+"Your account has been suspended Click here to verify: paypa1-secure.xyz",1,phishing
+"Congratulations You won 50000 dollars Send your bank details",1,fake_prize
+"URGENT Your card will be blocked Update now: bank-verify.top",1,bank_impersonation
+"Hey friend Im stuck abroad and need 500 dollars urgently Wire transfer please",1,social_engineering
+"Your package is held at customs Pay 50 dollars to release: delivery-pay.xyz",1,delivery_scam
+"تحذير بطاقتك الائتمانية مخترقة أدخل بياناتك للحماية",1,bank_impersonation
+"أنا المدير التنفيذي حول 50000 ريال فوراً لإتمام صفقة سرية",1,boss_fraud
+"فاتورة مستحقة تم تغيير حسابنا البنكي حول على الحساب الجديد",1,invoice_fraud
+"رقم جوالك فاز بسحب stc أرسل رقم بطاقتك لاستلام الجائزة",1,fake_prize
+"تم رصد محاولة اختراق اضغط هنا لتأمين حسابك: secure-login.click",1,phishing
+"عاجل جداً حسابك مهدد أدخل رقم البطاقة والـ CVV الآن",1,bank_impersonation
+"تهانينا أنت الفائز رقم 1000 اتصل الآن لاستلام مليون دولار",1,fake_prize
+"أخوي الغالي والله محتاجك ضروري حول لي 3000 وبرجعها",1,social_engineering
+"Account locked Verify identity immediately: microsoft-verify.xyz",1,phishing
+"You inherited 5 million from a Nigerian prince Send processing fee",1,nigerian_scam
+"أنا من البنك المركزي حسابك فيه مشكلة أرسل بياناتك",1,bank_impersonation
+"الدعم الفني جهازك مخترق اتصل الآن: 0599999999",1,tech_support_scam
+"وظيفة من المنزل براتب 10000 ريال سجل الآن: jobs-easy.top",1,job_scam
+"رسالة من الجمارك طردك محجوز ادفع 200 ريال: customs-pay.xyz",1,delivery_scam
+"استثمر 1000 ريال واحصل على 10000 فرصة محدودة",1,investment_scam
+"Dear valued customer your account needs verification Click: bank-secure.loan",1,phishing
+"I am a military officer need help transferring 2 million You get 30 percent",1,nigerian_scam
+"Free iPhone 15 Youre selected Pay 10 dollars shipping: free-phone.click",1,fake_prize
+"Your computer has virus Call now for immediate support: 1-800-SCAM",1,tech_support_scam
+"Work from home earn 5000 weekly No experience needed: easy-money.top",1,job_scam
+"Send me the code that you received",1,otp_request
+"I am your boss transfer 10000 immediately",1,boss_fraud
+"This is IT support send your password",1,tech_support_scam
+"Your bank account is compromised verify here",1,phishing
+"انا موظف البنك محتاج رقم الـ PIN حقك",1,bank_impersonation
+"وصلتك رسالة من البنك؟ ارسل لي الكود",1,otp_request
+"مديرك يحتاج تحويل عاجل لحساب خارجي",1,boss_fraud
+"بنك الراجحي يطلب تحديث بياناتك الآن",1,bank_impersonation
+"صديقك من الجامعة محتاج مساعدة مالية",1,social_engineering
+"رقم OTP اللي وصلك ارسله عشان نفعل حسابك",1,otp_request
+"انا اخوك عبدالله محتاج تحويل سريع",1,social_engineering
+"البنك الأهلي حسابك موقوف اضغط الرابط",1,bank_impersonation
+"ربحت معنا 100000 ريال ادخل بياناتك",1,fake_prize
+"مطلوب موظفين براتب 15000 سجل: jobs.xyz",1,job_scam
+"شحنتك واصلة ادفع 50 ريال: dhl-pay.top",1,delivery_scam
+"أنا من الموارد البشرية أرسل بيانات حسابك",1,boss_fraud
+"تم اختراق بطاقتك غير الرقم السري فوراً",1,bank_impersonation
+"هذا زميلك فهد محتاج سلفة 5000",1,social_engineering
+"البنك المركزي يطلب تأكيد هويتك",1,bank_impersonation
+"فزت بسحب موبايلي ارسل رقم بطاقتك",1,fake_prize
+"رسالة أمان ادخل كلمة المرور للتأكيد",1,phishing
+"I am the CEO wire 20000 urgently",1,boss_fraud
+"Verify your account send password",1,phishing
+"You won lottery send bank details",1,fake_prize
+"Friend needs help send money western union",1,social_engineering
+"IT department needs your login credentials",1,tech_support_scam
+"Package held pay customs fee click here",1,delivery_scam
+"Investment opportunity 500 percent return guaranteed",1,investment_scam
+"انا من شركة الكهرباء فاتورتك متأخرة ادفع الآن: electric-pay.xyz",1,utility_scam
+"تم رصد نشاط مشبوه أكد هويتك بإرسال رقم البطاقة",1,bank_impersonation
+"مبروك انت الفائز بجائزة ايفون ارسل عنوانك ورقم بطاقتك",1,fake_prize
+"هلا انا صاحبك سعود نسيت محفظتي محتاج 500",1,social_engineering
+"الراجحي: تم تحويل 500 ريال لحسابك من عبدالله الرصيد: 3250 ريال",0,safe
+"تذكير اجتماع الفريق غداً الساعة 10 صباحاً في قاعة الاجتماعات",0,safe
+"مرحباً مرفق تقرير المبيعات الشهري للمراجعة",0,safe
+"شكراً لتسجيلك في خدمتنا هذا إيميل التأكيد",0,safe
+"تم شحن طلبك رقم 12345 التوصيل خلال 3 إلى 5 أيام",0,safe
+"موعدك مع الدكتور أحمد يوم الأحد الساعة 4 مساءً",0,safe
+"Happy birthday Wishing you all the best",0,safe
+"Meeting reminder Project review at 2pm tomorrow",0,safe
+"Your order 5678 has been shipped Track it here: amazon.com/track",0,safe
+"Newsletter Check out our latest blog post about technology trends",0,safe
+"تم تحديث سياسة الخصوصية اطلع على التفاصيل",0,safe
+"إشعار راتبك لهذا الشهر تم إيداعه في حسابك",0,safe
+"دعوة حفل تكريم الموظفين المتميزين يوم الخميس",0,safe
+"فاتورة الكهرباء لشهر يناير جاهزة للدفع عبر التطبيق",0,safe
+"تذكير موعد تجديد الاشتراك بعد أسبوع",0,safe
+"تقرير الأداء الشهري مرفق للمراجعة والاعتماد",0,safe
+"تم تأكيد حجزك في فندق الريتز نتطلع لاستقبالك",0,safe
+"ملخص اجتماع اليوم والإجراءات المطلوبة مرفقة",0,safe
+"Thank you for your purchase Your receipt is attached",0,safe
+"Invitation Join us for the annual company celebration",0,safe
+"Your subscription will renew automatically next month",0,safe
+"تأكيد تم استلام طلب الإجازة وسيتم مراجعته",0,safe
+"مرفق جدول الدورات التدريبية للربع القادم",0,safe
+"أهلاً وسهلاً تم إنشاء حسابك بنجاح",0,safe
+"تذكير الاجتماع الأسبوعي غداً الساعة 9",0,safe
+"مرفق ملف العرض التقديمي للعميل",0,safe
+"تم استلام رسالتك وسيتم الرد خلال 24 ساعة",0,safe
+"إشعار تم تحديث التطبيق إلى الإصدار الجديد",0,safe
+"تقرير المصاريف الشهرية مرفق",0,safe
+"موعد المقابلة الشخصية يوم الأربعاء الساعة 11",0,safe
+"Weekly report summary attached for your review",0,safe
+"Team lunch tomorrow at 1pm restaurant nearby",0,safe
+"Your flight booking confirmed departure 5pm",0,safe
+"Password changed successfully for your account",0,safe
+"Welcome to the team looking forward to working together",0,safe
+"Quarterly results presentation scheduled for Friday",0,safe
+"Your refund has been processed takes 3 to 5 days",0,safe
+"Course registration confirmed see you in class",0,safe
+"Document signed successfully download copy here",0,safe
+"Appointment confirmed with Dr Smith Monday 3pm",0,safe
+"شكراً لك على التقييم نقدر ملاحظاتك",0,safe
+"تم الموافقة على طلبك",0,safe
+"مرحباً نشكرك على ثقتك بنا",0,safe
+"إيصال الدفع الإلكتروني مرفق",0,safe
+"جدول الرحلة مرفق للاطلاع",0,safe
+"تأكيد حجز الطاولة في المطعم",0,safe
+"نتائج الفحص الطبي جاهزة",0,safe
+"شهادة إتمام الدورة مرفقة",0,safe
+"تم تحديث معلومات الشحن",0,safe
+"إشعار استلام الطلب رقم 9876",0,safe
+"انا من stc ارسل لي آخر 4 ارقام من بطاقتك",1,phishing
+"تم سحب مبلغ من حسابك اضغط هنا لإلغاء العملية",1,bank_impersonation
+"جوالك فيه فيروس حمل برنامج الحماية: antivirus.xyz",1,tech_support_scam
+"أنت مطلوب في المحكمة ادفع الغرامة عبر الرابط",1,government_scam
+"اشتراكك منتهي وسيتم قطع الخدمة ادفع الآن",1,utility_scam
+"فريق الأمان يطلب تأكيد هويتك أرسل صورة الهوية",1,phishing
+"محتاج رقم CVV الخلفي عشان اتأكد انك صاحب البطاقة",1,card_request
+"رسالة من هيئة الزكاة ادفع المبلغ المستحق: zakat-pay.xyz",1,government_scam
+"تم اختيارك ضمن 100 فائز ارسل بياناتك الآن",1,fake_prize
+"انا المحاسب الجديد محتاج بيانات الحساب البنكي للشركة",1,boss_fraud
+"عرض حصري آخر ساعة للاشتراك بـ 1 ريال: offer.top",1,fake_offer
+"تنبيه من أبشر حدث بياناتك عبر الرابط المرفق",1,government_scam
+"Send the 6 digit code from your phone",1,otp_request
+"This is HR send your bank account for salary",1,boss_fraud
+"Account will be closed in 24 hours act now",1,phishing
+"Your Netflix is suspended update payment: netflix-pay.xyz",1,phishing
+"IRS refund pending send social security number",1,government_scam
+"Tech support your computer is infected call us",1,tech_support_scam
+"Prize claim send 100 dollars processing fee",1,fake_prize
+"Boss here transfer funds immediately confidential",1,boss_fraud
+"Bank alert unusual activity verify your card",1,bank_impersonation
+"Crypto investment double your money guaranteed",1,investment_scam
